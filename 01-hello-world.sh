@@ -1,1 +1,3 @@
-This first shell script
+#!/bin/bash
+
+echo "Hello, I am learning DevOps"
