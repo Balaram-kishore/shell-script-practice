@@ -1,3 +1,4 @@
+#!/bin/bash
 USERID=$(id -u)
 TIMESTAMP=$(date +%F-%H-%M-%S)
 SCRIPT_NAME=$(echo $0 | cut -d "." -f1)
@@ -32,5 +33,5 @@ VALIDATE $? "Installing MySQL"
 dnf install git -y &>>$LOGFILE
 VALIDATE $? "Installing Git"
 
-dnf install dockerr -y &>>$LOGFILE
+dnf install docker -y &>>$LOGFILE
 VALIDATE $? "Installing Docker"
